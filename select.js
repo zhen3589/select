@@ -23,28 +23,7 @@
 	Select.init = function (id,options) {
         this.id = id;
         let content = `<label>请选择地区</label><i id="choose_icon" class="layui-icon layui-icon-down "></i>`;
-		let choose = `
-            <div class="choose">
-                <div class="choose-hide">
-                    <div class="class province">
-                        <ul>
-                            
-                        </ul>
-                    </div>
-                    <div class="class city">
-                        <ul>
-                            <li>
-                                <span>123<span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="class area">
-                        <ul>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>`;
+		let choose = `<div class="choose"><div class="choose-hide"><div class="class province"><ul></ul></div><div class="class city"><ul><li><span><span></li></ul></div><div class="class area"><ul></ul></div></div></div>`;
         $(this.id).append(content, choose)
 
         json.forEach(element => {
