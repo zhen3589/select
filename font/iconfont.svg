@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="fanhui" unicode="&#59047;" d="M373.248 104.096a32 32 0 0 0-45.344 44.96l2.848 2.88L591.84 384l-261.12 232.096a32 32 0 0 0-5.12 41.984l2.496 3.2a32 32 0 0 0 41.984 5.12l3.2-2.496 288-256a32 32 0 0 0 2.816-44.96l-2.848-2.88-288-256z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="shouqi" unicode="&#59049;" d="M791.904 261.248a32 32 0 0 0-44.96-45.344l-2.88 2.848L512 479.84l-232.096-261.12a32 32 0 0 0-41.984-5.12l-3.2 2.496a32 32 0 0 0-5.12 41.984l2.496 3.2 256 288a32 32 0 0 0 44.96 2.816l2.88-2.848 256-288z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="xiala" unicode="&#59050;" d="M232.096 506.752a32 32 0 0 0 44.96 45.344l2.88-2.848L512 288.16l232.096 261.12a32 32 0 0 0 41.984 5.12l3.2-2.496a32 32 0 0 0 5.12-41.984l-2.496-3.2-256-288a32 32 0 0 0-44.96-2.816l-2.88 2.848-256 288z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

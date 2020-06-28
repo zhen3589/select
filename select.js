@@ -18,12 +18,12 @@
 				},
 			};
 
-			let content = `<label>请选择地区</label><i id="choose_icon" class="layui-icon layui-icon-down "></i>`;
+			let content = `<label>请选择地区</label><i id="choose_icon" class="iconfont icon-xiala "></i>`;
 			let choose = `<div class="choose"><div class="choose-hide"><div class="class province"><ul></ul></div><div class="class city"><ul><li><span><span></li></ul></div><div class="class area"><ul></ul></div></div></div>`;
 			$(select).append(content, choose);
 
 			json.forEach((element) => {
-				let str = ` <li id="${element.code}"><span>${element.name}</span> <i class="layui-icon layui-icon-right"></i></li>`;
+				let str = ` <li id="${element.code}"><span>${element.name}</span> <i class="iconfont icon-fanhui"></i></li>`;
 				$(select).find(".province ul").append(str);
 			});
 
@@ -31,7 +31,7 @@
 			$(select).on("click", function (event) {
 				event.stopPropagation();
 				$(this).find(".choose").slideDown(200);
-				$(this).find("#choose_icon").removeClass("layui-icon-down").addClass("layui-icon-up");
+				$(this).find("#choose_icon").removeClass("icon-xiala").addClass("icon-shouqi");
 			});
 
 			//选择省显示市
@@ -53,7 +53,7 @@
 					json.forEach((element) => {
 						if (element.code == $(this).attr("id")) {
 							element.city.forEach((item) => {
-								let str = ` <li id="${item.code}"><span>${item.name}</span><i class="layui-icon layui-icon-right"></i></li>`;
+								let str = ` <li id="${item.code}"><span>${item.name}</span><i class="iconfont icon-fanhui"></i></li>`;
 								$(select).find(".city ul").append(str);
 							});
 						}
@@ -119,14 +119,14 @@
 					$(select).find("label").text(inputValue);
 
 					$(select).find(".choose").hide();
-					$(select).find("#choose_icon").removeClass("layui-icon-up").addClass("layui-icon-down");
+					$(select).find("#choose_icon").removeClass("icon-shouqi").addClass("icon-xiala");
 
 					request(areaInformation);
 				});
 
 			$("html").click(function () {
 				$(select).find(".choose").hide();
-				$(select).find("#choose_icon").removeClass("layui-icon-up").addClass("layui-icon-down");
+				$(select).find("#choose_icon").removeClass("icon-shouqi").addClass("icon-xiala");
 			});
 		},
 	});
