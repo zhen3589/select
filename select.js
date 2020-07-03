@@ -1,6 +1,6 @@
 (function ($) {
 	$.fn.extend({
-		Select: function (request) {
+		Select: function (request,config) {
 			const select = this;
 			let inputValue = "";
 			let areaInformation = {
@@ -17,6 +17,14 @@
 					id: "",
 				},
 			};
+			
+			let option = {
+				expandTrigger:'click', // click / mouseover
+			}
+			for(let i in config) option[i] = config[i];
+            $(select).css('lineHeight',option.height).find('.choose').css('top', option.height)
+            $(select).css(option);
+            
 
 			let content = `<label>请选择地区</label><i id="choose_icon" class="iconfont icon-xiala "></i>`;
 			let choose = `<div class="choose"><div class="choose-hide"><div class="class province"><ul></ul></div><div class="class city"><ul><li><span><span></li></ul></div><div class="class area"><ul></ul></div></div></div>`;
@@ -35,7 +43,7 @@
 			});
 
 			//选择省显示市
-			$(select).find(".province li").on("click", function (event) {
+			$(select).find(".province li").on(option.expandTrigger, function (event) {
 					event.stopPropagation();
 
 					let area = $(this).find("span").text();
@@ -68,7 +76,7 @@
 				});
 
 			//选择市显示区
-			$(select).find(".city").on("click", "li", function (event) {
+			$(select).find(".city").on(option.expandTrigger, "li", function (event) {
 					event.stopPropagation();
 					let area = $(this).find("span").text();
 					let areaID = $(this).attr("id");

@@ -18,9 +18,18 @@
     <script src="./select.js"></script>
 
     <script>
+		
+		let options = {
+			width:'500px',
+			height:'50px',
+			borderColor:'red',
+            color:'red',
+			expandTrigger:'click', // click / mouseover
+		}
+		
         $('#select').Select(res => {
             console.log(res);
-        })
+        },options)
 
         $('#select1').Select(res => {
             console.log(res);
