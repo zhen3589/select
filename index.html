@@ -18,32 +18,30 @@
     <script src="./js/select.js"></script>
 
     <script>
-        
-        /*
-        * 配置项
-        * text:提示词; 默认'请选择区域'
-        * expandTrigger: click | mouseover; 默认click
-        * style: jQuery改变css方式
-        */ 
-	let options = {
-	    width:'300px',
-	    height:'50px',
-	    color:'#93b9ff',
-	    borderColor:'#93b9ff',
-	    text:'请选择省市区',
-	    expandTrigger:'mouseover', 
-	}
-        
-        // 添加配置
-        // 初始化 select
-        $('#select').Select(res => {
-            console.log(res); //  res 返回已选择区域信息
-        },options)
 
         // 未添加配置、默认
         $('#select1').Select(res => {
             console.log(res); // 已选择区域信息
         })
+
+        /* ------------------------------------------ >
+        * 配置项
+        * text:提示词; 默认'请选择区域'
+        * expandTrigger: click | mouseover; 默认click
+        * style: jQuery改变css方式
+        */
+        let options = {
+            width: '300px',
+            height: '50px',
+            color: '#93b9ff',
+            borderColor: '#93b9ff',
+            text: '请选择省市区',
+            expandTrigger: 'mouseover',
+        }
+        // 初始化 select
+        $('#select').Select(res => {
+            console.log(res); //  res 返回已选择区域信息
+        }, options)
 
     </script>
 </body>
