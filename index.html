@@ -10,9 +10,17 @@
 
 <body>
 
-    <div id="select" class="select"></div>
+    <p>默认：</p>
     <div id="select1" class="select"></div>
 
+    <br>
+
+    <p>已配置：</p>
+    <div id="select" class="select"></div>
+
+    
+
+    <span class="default"></span>
     <script src="./js/jQuery.js"></script>
     <script src="./js/city_code.js"></script>
     <script src="./js/select.js"></script>
@@ -22,6 +30,7 @@
         // 未添加配置、默认
         $('#select1').Select(res => {
             console.log(res); // 已选择区域信息
+            
         })
 
         /* ------------------------------------------ >
@@ -35,7 +44,7 @@
             height: '50px',
             color: '#93b9ff',
             borderColor: '#93b9ff',
-            text: '请选择省市区',
+            text: '省市区选择',
             expandTrigger: 'mouseover',
         }
         // 初始化 select

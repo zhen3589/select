@@ -141,8 +141,7 @@
 					areaInformation.area.id = areaID;
 
 					$(this).addClass("avtive").siblings().removeClass("avtive");
-					inputValue = inputValue + $(this).find("span").text();
-					$(select).find("label span").text(inputValue);
+					$(select).find("label span").text(inputValue + $(this).find("span").text());
 
 					$(select).find(".choose").hide();
 					$(select).find("#choose_icon").removeClass("icon-shouqi").addClass("icon-xiala");
